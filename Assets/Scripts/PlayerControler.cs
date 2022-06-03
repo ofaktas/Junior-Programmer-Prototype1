@@ -6,6 +6,7 @@ namespace UnityLearn
 {
     public class PlayerControler : MonoBehaviour
     {
+        //private variables
         [SerializeField] private float speed;
         [SerializeField] private float turnSpeed;
         [SerializeField] private float HorizantalInput;
@@ -19,6 +20,7 @@ namespace UnityLearn
 
         void Update()
         {
+            //The player input
             HorizantalInput = Input.GetAxis("Horizontal");
             ForwardInput = Input.GetAxis("Vertical");
 
